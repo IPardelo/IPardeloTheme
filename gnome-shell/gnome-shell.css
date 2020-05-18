@@ -934,6 +934,7 @@ StScrollBar {
     text-shadow: none;
     icon-shadow: none;
     box-shadow: none; }
+    
   .calendar .calendar-month-label {
     color: white;
     font-weight: bold;
@@ -1167,9 +1168,13 @@ StScrollBar {
     margin-bottom: 3px;
     margin-top: 1px;
     border-color: transparent; }
-  .message:active {
-    background-color: rgba(255, 255, 255, 0.04);
-    box-shadow: none; }
+    .message:active {
+      color: #F7F7F7;
+      background-color: #373737;
+      border-color: #222222;
+      text-shadow: none;
+      icon-shadow: none;
+      box-shadow: none; }
 
 .message-icon-bin {
   padding: .72em 0px .72em .72em; }
@@ -1344,7 +1349,9 @@ StScrollBar {
   icon-size: 2.9em; }
 
 .nm-dialog-scroll-view {
-  border: 0; }
+  border: 1px solid #272727;
+  padding: 0;
+  background-color: #373737; }
 
 .nm-dialog-header {
   font-weight: bold; }
@@ -1735,7 +1742,7 @@ StScrollBar {
       color: #F7F7F7;
       text-shadow: 0 1px rgba(0, 0, 0, 0.2);
       icon-shadow: 0 1px rgba(0, 0, 0, 0.2);
-      box-shadow: inset 0 0 0 2px #ef6161; }
+      box-shadow: inset 0 0 0 2px transparent; }
     .notification-banner .notification-button:active, .hotplug-notification-item:active, .modal-dialog .modal-dialog-linked-button:active {
       background-color: rgba(247, 247, 247, 0.2); }
     .notification-banner .notification-button:first-child, .hotplug-notification-item:first-child, .modal-dialog .modal-dialog-linked-button:first-child {
